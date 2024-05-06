@@ -1,0 +1,21 @@
+{
+  "name": "wybor-kierunku-zsckp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0",
+    "@babel/eslint-parser": "^7.22.11",
+    "@babel/plugin-syntax-import-assertions": "^7.22.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
