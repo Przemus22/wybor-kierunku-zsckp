@@ -69,7 +69,6 @@ poz.addEventListener('click', function () {
         aktywne.tagi.length >= 1 &&
         aktywne.poziom >= 1
     ) {
-        console.log(aktywne.tagi)
         fetchData()
     }
 })
