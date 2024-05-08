@@ -1,11 +1,11 @@
 import './style.css'
 import axios from 'axios'
-import { Dane } from './enumy.js'
+import { Dane, Kierunek } from './enumy.js'
 import './index.d.ts'
 
 // Elementy
 const zal: NodeListOf<HTMLElement> = document.querySelectorAll('.za')
-const apiDataElement = document.getElementById('api-data')
+const apiDataElement = document.getElementById('api-data') as HTMLElement
 const ocl: NodeListOf<HTMLElement> = document.querySelectorAll('.oc')
 const ocel: NodeListOf<HTMLElement> = document.querySelectorAll('.oce')
 const poz = document.querySelector('.pok') as HTMLElement
@@ -54,8 +54,10 @@ for (let i: number = 0; i < ocel.length; i++) {
         ocel.forEach((element) => {
             element.classList.remove('show')
         })
+
         ocel[i].classList.add('show')
-        aktywne.opinia = Number(ocel[i].textContent?.split('').shift())
+
+        aktywne.opinia = Number(i + 1)
     })
 }
 
@@ -70,6 +72,9 @@ poz.addEventListener('click', function () {
         aktywne.poziom >= 1
     ) {
         fetchData()
+    } else {
+        apiDataElement.innerHTML =
+            '<h3>Proszę wybrać co najmniej jeden rodzaj przycisku.</h3>'
     }
 })
 
@@ -78,10 +83,8 @@ poz.addEventListener('click', function () {
 async function fetchData() {
     try {
         const odp = await axios.post('https://api.pcreators.pl/api', aktywne)
-        console.log(odp)
-        if (apiDataElement) {
-            apiDataElement.innerText = JSON.stringify(odp.data.dane)
-        }
+        const odpdane: Kierunek = odp.data.dane
+        apiDataElement.innerHTML = `${odpdane.nazwa}`
     } catch (error) {
         console.error(error)
     }
