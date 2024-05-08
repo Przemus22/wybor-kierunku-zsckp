@@ -1,11 +1,11 @@
 import './style.css'
 import axios from 'axios'
-import { Dane } from './enumy.js'
+import { Dane, Kierunek } from './enumy.js'
 import './index.d.ts'
 
 // Elementy
 const zal: NodeListOf<HTMLElement> = document.querySelectorAll('.za')
-const apiDataElement = document.getElementById('api-data')
+const apiDataElement = document.getElementById('api-data') as HTMLElement
 const ocl: NodeListOf<HTMLElement> = document.querySelectorAll('.oc')
 const ocel: NodeListOf<HTMLElement> = document.querySelectorAll('.oce')
 const poz = document.querySelector('.pok') as HTMLElement
@@ -78,10 +78,8 @@ poz.addEventListener('click', function () {
 async function fetchData() {
     try {
         const odp = await axios.post('https://api.pcreators.pl/api', aktywne)
-        console.log(odp)
-        if (apiDataElement) {
-            apiDataElement.innerText = JSON.stringify(odp.data.dane)
-        }
+        const date: Kierunek = odp.data.dane
+        apiDataElement.innerHTML = `<div>${date.nazwa} ${date.informacje}</div>`
     } catch (error) {
         console.error(error)
     }
