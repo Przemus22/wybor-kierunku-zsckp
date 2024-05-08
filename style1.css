@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 115vh;
     margin: 0 auto;
+    text-align: center;
 }
 
 .cde {
@@ -103,15 +104,12 @@ body {
         background-image: linear-gradient(to right bottom, #4ff4c5f0, #040252);
         justify-content: center;
         align-items: center;
-        height: 1200px;
-        width: 80vh;
+        height: 1300px;
+        width: 85vh;
         margin: 0;
     }
-    h1 {
-        font-size: 70px;
-        text-align: center;
-        text-shadow: 70px;
-        color: black;
+    #cc {
+        width: 250px;
     }
     .cde {
         margin-left: 20px auto;

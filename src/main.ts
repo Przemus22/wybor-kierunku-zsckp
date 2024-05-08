@@ -140,13 +140,12 @@ const apiDataElement = document.getElementById('api-data')
 poz1.addEventListener('click', function () {
     fetchData()
 })
-
 async function fetchData() {
     try {
         const odp = await axios.post('https://api.pcreators.pl/api', dane3)
         console.log(odp)
         if (apiDataElement) {
-            apiDataElement.innerText = JSON.stringify(odp.data)
+            apiDataElement.innerText = JSON.stringify(odp.data.dane)
         }
     } catch (error) {
         console.error(error)
