@@ -8,12 +8,7 @@ body {
     height: 115vh;
     margin: 0 auto;
 }
-h1 {
-    font-size: 70px;
-    text-align: center;
-    text-shadow: -30px -30px 10px black;
-    color: black;
-}
+
 .cde {
     margin-left: 20px auto;
     text-align: center;
