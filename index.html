@@ -1,68 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="https://www.pliki.piotrkuzm.cf/pcreators-logo.png"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link href="style1.css" rel="stylesheet" />
-        <title>Wybór kierunków</title>
-    </head>
-    <body>
-        <div id="app"></div>
-        <script type="module" src="/src/main.ts"></script>
-        <a href="https://zsckp.powiatsochaczew.pl/"
-            ><img
-                id="cc"
-                src="https://cdn.discordapp.com/attachments/1152705949283401779/1237540587645829230/zsckplogokier.png?ex=663c04fc&is=663ab37c&hm=4d75de231fe6f0d2b8000dd05aa34039a90075f1f3e31a604afdd1cd8838e3d3&"
-                width="500"
-        /></a>
-        <div id="your-name">
-            <h2 class="zan">Zainteresowania</h2>
-            <button class="za">Informatyka</button>
-            <button class="za">Gry</button>
-            <button class="za">Programowanie</button>
-            <button class="za">Motoryzacja</button>
-            <button class="za">Naprawianie</button>
-            <button class="za">Elektryka</button>
-            <button class="za">Zarządzanie</button>
-            <button class="za">Sport</button>
-            <button class="za">Spotkania ze znajomymi</button>
-            <button class="za">Praca magazynów</button>
-            <button class="za">Budowanie</button>
-            <button class="za">Architektura</button>
-            <button class="za">Rysowanie</button>
-            <button class="za">Prace Mechaniczne</button>
-            <h2 class="tak">Trudność kierunku</h2>
-            <button class="oc">Mała</button>
-            <button class="oc">Średnia</button>
-            <button class="oc">Duża</button>
-            <h2 class="nie">Opinie</h2>
-            <button class="oce">1⭐</button>
-            <button class="oce">2⭐</button>
-            <button class="oce">3⭐</button>
-            <button class="oce">4⭐</button>
-            <button class="oce">5⭐</button>
-            <button class="oce">6⭐</button>
-            <button class="oce">7⭐</button>
-            <button class="oce">8⭐</button>
-            <button class="oce">9⭐</button>
-            <button class="oce">10⭐</button>
-            <h2 class="krn">Proponowany kierunek</h2>
-            <div id="api-data"></div>
-            <button class="pok">Pokaż proponowany kierunek</button>
-        </div>
-        <a
-            class="rys"
-            href="http://www.facebook.com/profile.php?id=100064657243419&locale=pl_PL"
-            ><img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwt6uH2A4ytny44FrNh4hu____dFbTnNTcwQ&s"
-                width="30"
-                height="30"
-        /></a>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://www.pliki.piotrkuzm.cf/pcreators-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="style1.css" rel="stylesheet" />
+    <title>Wybór kierunków</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <a href="https://zsckp.powiatsochaczew.pl/"><img id="cc"
+            src="https://www.pliki.piotrkuzm.cf/kierunkizsckp-logov2.png" width="500" /></a>
+    <div id="your-name">
+        <h2 class="zan">Zainteresowania</h2>
+        <button class="za" id="informatyka">Informatyka</button>
+        <button class="za" id="gry">Gry</button>
+        <button class="za" id="programowanie">Programowanie</button>
+        <button class="za" id="motoryzacja">Motoryzacja</button>
+        <button class="za" id="naprawianie">Naprawianie</button>
+        <button class="za" id="elektryka">Elektryka</button>
+        <button class="za" id="zarzadzanie">Zarządzanie</button>
+        <button class="za" id="sport">Sport</button>
+        <button class="za" id="spotkania">Spotkania ze znajomymi</button>
+        <button class="za" id="magazyny">Praca magazynów</button>
+        <button class="za" id="budowanie">Budowanie</button>
+        <button class="za" id="architektura">Architektura</button>
+        <button class="za" id="rysowanie">Rysowanie</button>
+        <button class="za" id="mechaniczne">Prace Mechaniczne</button>
+        <h2 class="tak">Trudność kierunku</h2>
+        <button class="oc" id="1">Mała</button>
+        <button class="oc" id="2">Średnia</button>
+        <button class="oc" id="3">Duża</button>
+        <h2 class="nie">Opinie</h2>
+        <button class="oce">1⭐</button>
+        <button class="oce">2⭐</button>
+        <button class="oce">3⭐</button>
+        <button class="oce">4⭐</button>
+        <button class="oce">5⭐</button>
+        <button class="oce">6⭐</button>
+        <button class="oce">7⭐</button>
+        <button class="oce">8⭐</button>
+        <button class="oce">9⭐</button>
+        <button class="oce">10⭐</button>
+        <h2 class="krn">Proponowany kierunek</h2>
+        <div id="api-data"></div>
+        <button class="pok">Pokaż proponowany kierunek</button>
+    </div>
+    <a class="rys" href="http://www.facebook.com/profile.php?id=100064657243419&locale=pl_PL"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwt6uH2A4ytny44FrNh4hu____dFbTnNTcwQ&s"
+            width="30" height="30" /></a>
+</body>
+
 </html>
