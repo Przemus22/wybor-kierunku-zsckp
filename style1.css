@@ -93,8 +93,7 @@ body {
     font-family: Arial;
 }
 h6 {
-    color: white;
-    margin-top: 50rem;
+    color: black;
 }
 /*telefon*/
 @media screen and (max-width: 767px) {
@@ -179,6 +178,6 @@ h6 {
         margin-top: 300px;
     }
     h6 {
-        color: white;
+        color: black;
     }
 }
