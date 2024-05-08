@@ -1,6 +1,6 @@
 import './style.css'
 import axios from 'axios'
-import { Dane, Kierunek } from './enumy.js'
+import { Dane } from './enumy.js'
 import './index.d.ts'
 
 // Elementy
@@ -83,8 +83,10 @@ poz.addEventListener('click', function () {
 async function fetchData() {
     try {
         const odp = await axios.post('https://api.pcreators.pl/api', aktywne)
-        const odpdane: Kierunek = odp.data.dane
-        apiDataElement.innerHTML = `${odpdane.nazwa}`
+        console.log(odp)
+        if (apiDataElement) {
+            apiDataElement.innerText = JSON.stringify(odp.data.dane)
+        }
     } catch (error) {
         console.error(error)
     }
