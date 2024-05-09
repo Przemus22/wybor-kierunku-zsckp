@@ -79,8 +79,8 @@ async function fetchData() {
     try {
         const odp = await axios.post('https://api.pcreators.pl/api', aktywne)
         const date: Kierunek = odp.data.dane
-        apiDataElement.innerHTML = `<div>${date.nazwa}: ${date.informacje} <img class="sde" src="${date.url}" width="90"
-        height="90"></img></div>`
+        apiDataElement.innerHTML = `<div>${date.nazwa}: ${date.informacje} <img class="sde" src="${date.url}" width="100"
+        height="100"></img></div>`
     } catch (error) {
         console.error(error)
     }

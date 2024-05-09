@@ -94,7 +94,9 @@ body {
 }
 h6 {
     color: white;
-    margin-top: 50rem;
+}
+.sde {
+    border-radius: 15px;
 }
 /*telefon*/
 @media screen and (max-width: 767px) {
@@ -184,6 +186,6 @@ h6 {
     }
     h6 {
         color: white;
-        margin-top: 1300px;
+        top: 600px;
     }
 }
