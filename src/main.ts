@@ -80,6 +80,7 @@ poz.addEventListener('click', function () {
         aktywne.opinia = 0
         aktywne.poziom = 0
         aktywne.tagi = []
+
         setTimeout(() => {
             for (let i: number = 0; i < zal.length; i++) {
                 if (zal[i].classList.contains('show')) {
@@ -111,11 +112,31 @@ poz.addEventListener('click', function () {
 async function fetchData() {
     try {
         const odp = await axios.post('https://api.pcreators.pl/api', aktywne)
-        const date: Kierunek = odp.data.dane
-        apiDataElement.innerHTML = `<div><h4>${date.nazwa}</h4> <p>${date.informacje}</p> 
+        if (odp.status == 200) {
+            const date: Kierunek = odp.data.dane
+            apiDataElement.innerHTML = `<div><h4>${date.nazwa}</h4> <p>${date.informacje}</p> 
         <img class="sde" src="${date.url}" width="100"
         height="100"></img></div>`
+        } else {
+            apiDataElement.innerHTML = `Wystąpił błąd: ${odp.status}.\n Sprawdź konsole aby zobaczyć tresć błędu.`
+        }
     } catch (error) {
         console.error(error)
     }
 }
+
+async function wejscia() {
+    if (!localStorage.getItem('wejscie')) {
+        localStorage.setItem('wejscie', 'true')
+        const liczba = await axios.post('https://api.pcreators.pl/wejscia', {
+            wejscia: true,
+        })
+        return liczba.data.dane
+    } else {
+        const liczba = await axios.post('https://api.pcreators.pl/wejscia', {
+            wejscia: false,
+        })
+        return liczba.data.dane
+    }
+}
+wejscia()
