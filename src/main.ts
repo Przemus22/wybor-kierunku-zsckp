@@ -64,12 +64,37 @@ for (let i: number = 0; i < ocel.length; i++) {
 poz.addEventListener('click', function () {
     poz.style.backgroundImage =
         'linear-gradient(to right bottom, #ebee39, #f04726)'
+
+    setTimeout(() => {
+        poz.style.backgroundImage =
+            'linear-gradient(to right bottom, #4ff4c5f0, #3c35f0d9)'
+    }, 50)
+
     if (
         aktywne.opinia >= 1 &&
         aktywne.tagi.length >= 3 &&
         aktywne.poziom >= 1
     ) {
         fetchData()
+
+        aktywne.opinia = 0
+        aktywne.poziom = 0
+        aktywne.tagi = []
+        setTimeout(() => {
+            for (let i: number = 0; i < zal.length; i++) {
+                if (zal[i].classList.contains('show')) {
+                    zal[i].classList.remove('show')
+                    count--
+                }
+                ocl.forEach((element) => {
+                    element.classList.remove('show')
+                })
+
+                ocel.forEach((element) => {
+                    element.classList.remove('show')
+                })
+            }
+        }, 40)
     } else {
         if (count < 3) {
             apiDataElement.innerHTML =
