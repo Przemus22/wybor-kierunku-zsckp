@@ -5,7 +5,7 @@ body {
     font-family: Arial;
     justify-content: center;
     align-items: center;
-    height: 125vh;
+    height: 140vh;
     margin: 0 auto;
     text-align: center;
 }
@@ -30,7 +30,7 @@ body {
     margin-left: 1rem;
     border-radius: 1rem;
     margin-top: 1rem;
-    background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+    background-image: linear-gradient(to right bottom, #4ff4c5f0, #3c35f0d9);
     border: #ffffff;
     color: black;
 }
@@ -41,7 +41,7 @@ body {
     margin-left: 1rem;
     border-radius: 1rem;
     margin-top: 1rem;
-    background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+    background-image: linear-gradient(to right bottom, #4ff4c5f0, #3c35f0d9);
     border: #ffffff;
     color: black;
 }
@@ -52,7 +52,7 @@ body {
     margin-left: 1rem;
     border-radius: 1rem;
     margin-top: 1rem;
-    background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+    background-image: linear-gradient(to right bottom, #4ff4c5f0, #3c35f0d9);
     border: #ffffff;
     color: black;
 }
@@ -61,7 +61,7 @@ body {
 }
 #your-name {
     width: 1400px;
-    height: 840px;
+    height: 900px;
     margin-left: 5rem;
     background-color: rgba(234, 233, 233, 0.936);
     border-radius: 1rem;
@@ -75,17 +75,17 @@ body {
 }
 .rys {
     position: absolute;
-    top: 49rem;
+    top: 58rem;
     left: 1rem;
 }
 .pok {
-    background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+    background-image: linear-gradient(to right bottom, #4ff4c5f0, #3c35f0d9);
     border: #ffffff;
     color: black;
     border-radius: 1rem;
     margin-left: 35rem;
-    margin-top: 3rem;
     margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 #api-data {
     color: black;
@@ -95,6 +95,8 @@ body {
 h6 {
     color: white;
     margin-top: 50rem;
+}
+.sde {
 }
 /*telefon*/
 @media screen and (max-width: 767px) {
@@ -131,7 +133,11 @@ h6 {
         margin-left: 10px;
         border-radius: 15px;
         margin-top: 10px;
-        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        background-image: linear-gradient(
+            to right bottom,
+            #4ff4c5f0,
+            #211be8e7
+        );
         border: #ffffff;
         color: black;
     }
@@ -153,7 +159,7 @@ h6 {
     }
     #your-name {
         width: 1420px;
-        height: 1550px;
+        height: 1420px;
         margin-left: 5px;
         background-color: rgba(234, 233, 233, 0.936);
         border-radius: 15px;
@@ -167,7 +173,7 @@ h6 {
     }
     .rys {
         position: absolute;
-        top: 1350px;
+        top: 1500px;
         left: 40px;
     }
     .pok {
@@ -180,5 +186,6 @@ h6 {
     }
     h6 {
         color: white;
+        margin-top: 1300px;
     }
 }

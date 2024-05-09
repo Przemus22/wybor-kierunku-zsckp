@@ -23,7 +23,7 @@ let count = 0
 
 for (let i: number = 0; i < zal.length; i++)
     zal[i].addEventListener('click', () => {
-        if (!zal[i].classList.contains('show') && count < 6) {
+        if (!zal[i].classList.contains('show') && count < 10) {
             zal[i].classList.add('show')
             aktywne.tagi.push(zal[i].id)
             count++
@@ -79,7 +79,8 @@ async function fetchData() {
     try {
         const odp = await axios.post('https://api.pcreators.pl/api', aktywne)
         const date: Kierunek = odp.data.dane
-        apiDataElement.innerHTML = `<div>${date.nazwa} ${date.informacje}</div>`
+        apiDataElement.innerHTML = `<div>${date.nazwa}: ${date.informacje} <img class="sde" src="${date.url}" width="90"
+        height="90"></img></div>`
     } catch (error) {
         console.error(error)
     }
