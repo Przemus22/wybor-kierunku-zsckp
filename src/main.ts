@@ -66,13 +66,18 @@ poz.addEventListener('click', function () {
         'linear-gradient(to right bottom, #ebee39, #f04726)'
     if (
         aktywne.opinia >= 1 &&
-        aktywne.tagi.length >= 1 &&
+        aktywne.tagi.length >= 3 &&
         aktywne.poziom >= 1
     ) {
         fetchData()
     } else {
-        apiDataElement.innerHTML =
-            '<h3>Proszę wybrać co najmniej jeden rodzaj przycisku.</h3>'
+        if (aktywne.tagi.length < 3) {
+            apiDataElement.innerHTML =
+                '<h3>Proszę wybrać co najmniej 3 zainteresowania.</h3>'
+        } else {
+            apiDataElement.innerHTML =
+                '<h3>Proszę wybrać co najmniej jeden rodzaj przycisku.</h3>'
+        }
     }
 })
 
