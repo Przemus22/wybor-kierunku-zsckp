@@ -71,7 +71,7 @@ poz.addEventListener('click', function () {
     ) {
         fetchData()
     } else {
-        if (aktywne.tagi.length < 3) {
+        if (count < 3) {
             apiDataElement.innerHTML =
                 '<h3>Proszę wybrać co najmniej 3 zainteresowania.</h3>'
         } else {
