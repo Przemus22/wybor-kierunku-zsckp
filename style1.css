@@ -6,7 +6,7 @@ body {
     font-family: Arial;
     justify-content: center;
     align-items: center;
-    height: 140vh;
+    height: 165vh;
     margin: 0 auto;
     text-align: center;
 }
@@ -62,7 +62,7 @@ body {
 }
 #your-name {
     width: 1400px;
-    height: 900px;
+    height: 1100px;
     margin-left: 5rem;
     background-color: rgba(234, 233, 233, 0.936);
     border-radius: 1rem;
@@ -76,7 +76,7 @@ body {
 }
 .rys {
     position: absolute;
-    top: 58rem;
+    top: 67rem;
     left: 1rem;
 }
 .pok {
