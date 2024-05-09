@@ -9,6 +9,7 @@ const apiDataElement = document.getElementById('api-data') as HTMLElement
 const ocl: NodeListOf<HTMLElement> = document.querySelectorAll('.oc')
 const ocel: NodeListOf<HTMLElement> = document.querySelectorAll('.oce')
 const poz = document.querySelector('.pok') as HTMLElement
+const wejsciaDoc = document.getElementById('wynik') as HTMLElement
 
 // Dane
 
@@ -125,17 +126,21 @@ async function fetchData() {
     }
 }
 
+// Wejscia
+
 async function wejscia() {
     if (!localStorage.getItem('wejscie')) {
         localStorage.setItem('wejscie', 'true')
         const liczba = await axios.post('https://api.pcreators.pl/wejscia', {
             wejscia: true,
         })
+        wejsciaDoc.textContent = liczba.data.dane
         return liczba.data.dane
     } else {
         const liczba = await axios.post('https://api.pcreators.pl/wejscia', {
             wejscia: false,
         })
+        wejsciaDoc.textContent = `${liczba.data.dane} odwiedzin`
         return liczba.data.dane
     }
 }
