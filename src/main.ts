@@ -55,7 +55,7 @@ for (let i: number = 0; i < ocel.length; i++) {
             element.classList.remove('show')
         })
         ocel[i].classList.add('show')
-        aktywne.opinia = Number(ocel[i].textContent?.split('').shift())
+        aktywne.opinia = Number(i + 1)
     })
 }
 
@@ -70,6 +70,9 @@ poz.addEventListener('click', function () {
         aktywne.poziom >= 1
     ) {
         fetchData()
+    } else {
+        apiDataElement.innerHTML =
+            '<h3>Proszę wybrać co najmniej jeden rodzaj przycisku.</h3>'
     }
 })
 
