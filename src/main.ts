@@ -134,7 +134,7 @@ async function wejscia() {
         const liczba = await axios.post('https://api.pcreators.pl/wejscia', {
             wejscia: true,
         })
-        wejsciaDoc.textContent = liczba.data.dane
+        wejsciaDoc.textContent = `${liczba.data.dane} odwiedzin`
         return liczba.data.dane
     } else {
         const liczba = await axios.post('https://api.pcreators.pl/wejscia', {
