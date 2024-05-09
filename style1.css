@@ -104,7 +104,7 @@ h6 {
         background-image: linear-gradient(to right bottom, #4ff4c5f0, #040252);
         justify-content: center;
         align-items: center;
-        height: 1700px;
+        height: 2000px;
         width: 120vh;
         margin: 0;
     }
@@ -158,8 +158,8 @@ h6 {
         color: black;
     }
     #your-name {
-        width: 1420px;
-        height: 1420px;
+        width: 900px;
+        height: 1290px;
         margin-left: 5px;
         background-color: rgba(234, 233, 233, 0.936);
         border-radius: 15px;
@@ -173,7 +173,7 @@ h6 {
     }
     .rys {
         position: absolute;
-        top: 1500px;
+        top: 1400px;
         left: 40px;
     }
     .pok {
@@ -182,10 +182,12 @@ h6 {
         color: black;
         border-radius: 15px;
         margin-left: 200px;
-        margin-top: 300px;
+        margin-top: 200px;
     }
     h6 {
+        position: absolute;
         color: white;
-        top: 600px;
+        top: 1200px;
+        left: 450px;
     }
 }

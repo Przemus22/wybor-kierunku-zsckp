@@ -2,7 +2,7 @@ import './style.css'
 import axios from 'axios'
 import { Dane, Kierunek } from './enumy.js'
 import './index.d.ts'
-
+import 'bootstrap/dist/css/bootstrap.css'
 // Elementy
 const zal: NodeListOf<HTMLElement> = document.querySelectorAll('.za')
 const apiDataElement = document.getElementById('api-data') as HTMLElement
