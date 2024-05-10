@@ -15,7 +15,7 @@ const wejsciaDoc = document.getElementById('wynik') as HTMLElement
 
 const aktywne: Dane = {
     tagi: [],
-    opinia: 0,
+    rozszerzenia: [],
     poziom: 0,
 }
 
@@ -48,17 +48,25 @@ for (let a: number = 0; a < ocl.length; a++) {
         aktywne.poziom = Number(ocl[a].id)
     })
 }
-//OPINIE//
+//rozszerzenia//
 
-for (let i: number = 0; i < ocel.length; i++) {
+let coun = 0
+
+for (let i: number = 0; i < ocel.length; i++)
     ocel[i].addEventListener('click', () => {
-        ocel.forEach((element) => {
-            element.classList.remove('show')
-        })
-        ocel[i].classList.add('show')
-        aktywne.opinia = Number(i + 1)
+        if (!ocel[i].classList.contains('show') && coun < 10) {
+            ocel[i].classList.add('show')
+            aktywne.tagi.push(ocel[i].id)
+            coun++
+        } else if (ocel[i].classList.contains('show')) {
+            ocel[i].classList.remove('show')
+            coun--
+
+            aktywne.tagi = aktywne.tagi.filter(
+                (oce: string) => oce == ocel[i].id,
+            )
+        }
     })
-}
 
 //Pokaż kierunek//
 
@@ -72,13 +80,13 @@ poz.addEventListener('click', function () {
     }, 50)
 
     if (
-        aktywne.opinia >= 1 &&
+        aktywne.rozszerzenia.length >= 1 &&
         aktywne.tagi.length >= 3 &&
         aktywne.poziom >= 1
     ) {
         fetchData()
 
-        aktywne.opinia = 0
+        aktywne.rozszerzenia = []
         aktywne.poziom = 0
         aktywne.tagi = []
 

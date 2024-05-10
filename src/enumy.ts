@@ -41,6 +41,6 @@ export interface Kierunek {
 
 export interface Dane {
     tagi: string[]
-    opinia: number
+    rozszerzenia: string[]
     poziom: number
 }
