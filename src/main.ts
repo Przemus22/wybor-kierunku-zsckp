@@ -1,4 +1,3 @@
-import './style.css'
 import axios from 'axios'
 import { Dane, Kierunek } from './enumy.js'
 import './index.d.ts'
@@ -96,14 +95,17 @@ poz.addEventListener('click', function () {
                     zal[i].classList.remove('show')
                     count--
                 }
-                ocl.forEach((element) => {
-                    element.classList.remove('show')
-                })
-
-                ocel.forEach((element) => {
-                    element.classList.remove('show')
-                })
             }
+            ocl.forEach((element) => {
+                element.classList.remove('show')
+            })
+
+            ocel.forEach((element, index) => {
+                if (ocel[index].classList.contains('show')) {
+                    element.classList.remove('show')
+                    coun--
+                }
+            })
         }, 40)
     } else {
         if (count < 3) {
