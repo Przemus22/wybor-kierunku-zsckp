@@ -32,7 +32,7 @@ for (let i: number = 0; i < zal.length; i++)
             zal[i].classList.remove('show')
             count--
 
-            aktywne.tagi = aktywne.tagi.filter((za: string) => za == zal[i].id)
+            aktywne.tagi = aktywne.tagi.filter((za: string) => za != zal[i].id)
         }
     })
 
@@ -56,14 +56,14 @@ for (let i: number = 0; i < ocel.length; i++)
     ocel[i].addEventListener('click', () => {
         if (!ocel[i].classList.contains('show') && coun < 10) {
             ocel[i].classList.add('show')
-            aktywne.tagi.push(ocel[i].id)
+            aktywne.rozszerzenia.push(ocel[i].id)
             coun++
         } else if (ocel[i].classList.contains('show')) {
             ocel[i].classList.remove('show')
             coun--
 
-            aktywne.tagi = aktywne.tagi.filter(
-                (oce: string) => oce == ocel[i].id,
+            aktywne.rozszerzenia = aktywne.rozszerzenia.filter(
+                (oce: string) => oce != ocel[i].id,
             )
         }
     })

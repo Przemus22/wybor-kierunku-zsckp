@@ -1,99 +1,77 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <link href="style1.css" rel="stylesheet" />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="https://www.pliki.piotrkuzm.cf/pcreators-logo.png"
-        />
-        <meta property="og:title" content="Wybór Kierunków w ZSCKP Sochaczew" />
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:url"
-            content="https://kierunki-zsckp.pcreators.pl/"
-        />
-        <meta
-            property="og:image"
-            content="https://www.pliki.piotrkuzm.cf/kierunkizsckp-logov2.png"
-        />
-        <meta
-            property="og:description"
-            content="Odkryj swoją przyszłość z naszymi kierunkami! Znajdź idealną ścieżkę kariery i rozpocznij podróż do sukcesu już dziś."
-        />
 
-        <title>Wybór kierunków</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="style1.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="https://www.pliki.piotrkuzm.cf/pcreators-logo.png" />
+    <meta property="og:title" content="Wybór Kierunków w ZSCKP Sochaczew" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kierunki-zsckp.pcreators.pl/" />
+    <meta property="og:image" content="https://www.pliki.piotrkuzm.cf/kierunkizsckp-logov2.png" />
+    <meta property="og:description"
+        content="Odkryj swoją przyszłość z naszymi kierunkami! Znajdź idealną ścieżkę kariery i rozpocznij podróż do sukcesu już dziś." />
 
-    <body>
-        <div id="app"></div>
+    <title>Wybór kierunków</title>
+</head>
 
-        <script type="module" src="/src/main.ts"></script>
+<body>
+    <div id="app"></div>
 
-        <div id="logo">
-            <a href="https://zsckp.powiatsochaczew.pl/">
-                <img
-                    id="cc"
-                    src="https://www.pliki.piotrkuzm.cf/kierunkizsckp-logov2.png"
-                    width="500"
-                />
+    <script type="module" src="/src/main.ts"></script>
+
+    <div id="logo">
+        <a href="https://zsckp.powiatsochaczew.pl/">
+            <img id="cc" src="https://www.pliki.piotrkuzm.cf/kierunkizsckp-logov2.png" width="500" />
+        </a>
+        <div id="social">
+            <a href="http://www.facebook.com/profile.php?id=100064657243419&locale=pl_PL">
+                <img id="rys"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwt6uH2A4ytny44FrNh4hu____dFbTnNTcwQ&s"
+                    width="30" height="30" />
             </a>
-            <div id="social">
-                <a
-                    href="http://www.facebook.com/profile.php?id=100064657243419&locale=pl_PL"
-                >
-                    <img
-                        id="rys"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwt6uH2A4ytny44FrNh4hu____dFbTnNTcwQ&s"
-                        width="30"
-                        height="30"
-                    />
-                </a>
-                <p id="wynik"></p>
-            </div>
+            <p id="wynik"></p>
         </div>
+    </div>
 
-        <div id="your-name">
-            <h2 class="zan">Zainteresowania</h2>
-            <button class="za" id="informatyka">Informatyka</button>
-            <button class="za" id="gry">Gry</button>
-            <button class="za" id="programowanie">Programowanie</button>
-            <button class="za" id="motoryzacja">Motoryzacja</button>
-            <button class="za" id="naprawianie">Naprawianie</button>
-            <button class="za" id="elektryka">Elektryka</button>
-            <button class="za" id="zarzadzanie">Zarządzanie</button>
-            <button class="za" id="sport">Sport</button>
-            <button class="za" id="spotkania">Spotkania ze znajomymi</button>
-            <button class="za" id="magazyny">Praca magazynów</button>
-            <button class="za" id="budowanie">Budowanie</button>
-            <button class="za" id="architektura">Architektura</button>
-            <button class="za" id="rysowanie">Rysowanie</button>
-            <button class="za" id="mechaniczne">Prace Mechaniczne</button>
-            <button class="za" id="gotowanie">Gotowanie</button>
-            <h2 class="tak">Trudność kierunku</h2>
-            <button class="oc" id="1">Mała</button>
-            <button class="oc" id="2">Średnia</button>
-            <button class="oc" id="3">Duża</button>
-            <h2 class="nie">Rozszerzenia</h2>
-            <button class="oce">Matematyka</button>
-            <button class="oce">Język Angielski</button>
-            <button class="oce">Fizyka</button>
-            <button class="oce">Geografia</button>
-            <button class="oce">Brak</button>
+    <div id="your-name">
+        <h2 class="zan">Zainteresowania</h2>
+        <button class="za" id="informatyka">Informatyka</button>
+        <button class="za" id="gry">Gry</button>
+        <button class="za" id="programowanie">Programowanie</button>
+        <button class="za" id="motoryzacja">Motoryzacja</button>
+        <button class="za" id="naprawianie">Naprawianie</button>
+        <button class="za" id="elektryka">Elektryka</button>
+        <button class="za" id="zarzadzanie">Zarządzanie</button>
+        <button class="za" id="sport">Sport</button>
+        <button class="za" id="spotkania">Spotkania ze znajomymi</button>
+        <button class="za" id="magazyny">Praca magazynów</button>
+        <button class="za" id="budowanie">Budowanie</button>
+        <button class="za" id="architektura">Architektura</button>
+        <button class="za" id="rysowanie">Rysowanie</button>
+        <button class="za" id="mechaniczne">Prace Mechaniczne</button>
+        <button class="za" id="gotowanie">Gotowanie</button>
+        <h2 class="tak">Trudność kierunku</h2>
+        <button class="oc" id="1">Mała</button>
+        <button class="oc" id="2">Średnia</button>
+        <button class="oc" id="3">Duża</button>
+        <h2 class="nie">Rozszerzenia</h2>
+        <button class="oce" id="matma">Matematyka</button>
+        <button class="oce" id="ang">Język Angielski</button>
+        <button class="oce" id="fizyka">Fizyka</button>
+        <button class="oce" id="geografia">Geografia</button>
+        <button class="oce" id="brak">Brak</button>
 
-            <h2 class="krn">Proponowany kierunek</h2>
-            <div id="api-data"></div>
-            <button class="pok">Pokaż proponowany kierunek</button>
-            <br />
-            <h6 class="copyright">
-                © 2024 PCreators (Piotr Kołodziejczyk, Przemek Kadłubaj i Piotr
-                Kuźmiński)
-            </h6>
-        </div>
-    </body>
+        <h2 class="krn">Proponowany kierunek</h2>
+        <div id="api-data"></div>
+        <button class="pok">Pokaż proponowany kierunek</button>
+        <br />
+        <h6 class="copyright">
+            © 2024 PCreators (Piotr Kołodziejczyk, Przemek Kadłubaj i Piotr
+            Kuźmiński)
+        </h6>
+    </div>
+</body>
+
 </html>
