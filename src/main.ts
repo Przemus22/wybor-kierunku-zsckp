@@ -54,7 +54,7 @@ let coun = 0
 
 for (let i: number = 0; i < ocel.length; i++)
     ocel[i].addEventListener('click', () => {
-        if (!ocel[i].classList.contains('show') && coun < 10) {
+        if (!ocel[i].classList.contains('show') && coun < 2) {
             ocel[i].classList.add('show')
             aktywne.rozszerzenia.push(ocel[i].id)
             coun++
