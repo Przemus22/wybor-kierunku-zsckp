@@ -397,7 +397,7 @@ h6 {
         color: black;
     }
 }
-/*Tablet*/
+/*Tablet pionowo*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     body {
         background-image: linear-gradient(to right bottom, #4ff4c5f0, #040252);
@@ -485,8 +485,8 @@ h6 {
         color: black;
     }
 }
-/*Desktop*/
-@media screen and (min-width: 1025px) {
+/*Tablet poziomo*/
+@media screen and (min-width: 1025px) and(max-width: 1280px) {
     body {
         background-image: linear-gradient(to right bottom, #4ff4c5f0, #040252);
         justify-content: center;
@@ -560,5 +560,332 @@ h6 {
         margin: auto;
         padding: 1rem;
         color: black;
+    }
+}
+/*Laptop mały*/
+@media screen and (min-width: 1281px) and(max-width: 1366px) {
+    body {
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #040252);
+        justify-content: center;
+        align-items: center;
+        height: 1500px;
+        width: 1366px;
+        display: flex;
+        margin: auto;
+    }
+    .zan {
+        margin-left: 10px;
+        margin-top: 20px;
+        text-align: center;
+        color: black;
+    }
+    .za {
+        margin-left: auto;
+        border-radius: 15px;
+        margin-top: auto;
+        background-image: linear-gradient(
+            to right bottom,
+            #4ff4c5f0,
+            #211be8e7
+        );
+        border: #ffffff;
+        color: black;
+    }
+    .oc {
+        margin-left: auto;
+        border-radius: 15px;
+        margin-top: auto;
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        border: #ffffff;
+        color: black;
+    }
+    .oce {
+        margin-left: auto;
+        border-radius: 15px;
+        margin-top: auto;
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        border: #ffffff;
+        color: black;
+    }
+    #your-name {
+        margin: 2rem;
+        background-color: rgba(234, 233, 233, 0.936);
+        border-radius: 15px;
+        display: block;
+        width: 1300px;
+        height: 1400px;
+    }
+    #logo {
+        display: block;
+        width: auto;
+    }
+
+    .krn {
+        text-align: center;
+        margin-left: 20px;
+        color: black;
+    }
+    .pok {
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        border: #ffffff;
+        color: black;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .copyright {
+        margin: auto;
+        padding: 1rem;
+        color: black;
+    }
+}
+
+/*Laptop duzy i desktop*/
+@media screen and (min-width: 1367px) and (max-witdh: 1920px) {
+    body {
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #040252);
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        display: flex;
+        margin: auto;
+    }
+    .zan {
+        margin-left: 20px;
+        margin-top: 30px;
+        text-align: center;
+        color: black;
+    }
+    .za {
+        margin-left: 10px;
+        border-radius: 15px;
+        margin-top: 10px;
+        background-image: linear-gradient(
+            to right bottom,
+            #4ff4c5f0,
+            #211be8e7
+        );
+        border: #ffffff;
+        color: black;
+    }
+    .oc {
+        margin-left: 10px;
+        border-radius: 15px;
+        margin-top: 10px;
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        border: #ffffff;
+        color: black;
+    }
+    .oce {
+        margin-left: 10px;
+        border-radius: 15px;
+        margin-top: 10px;
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        border: #ffffff;
+        color: black;
+    }
+    #your-name {
+        margin: 2rem;
+        background-color: rgba(234, 233, 233, 0.936);
+        border-radius: 15px;
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    #logo {
+        display: block;
+        width: auto;
+    }
+    .krn {
+        text-align: center;
+        margin-left: 20px;
+        color: black;
+    }
+    .pok {
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        border: #ffffff;
+        color: black;
+        border-radius: 15px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .copyright {
+        margin: auto;
+        padding: 1rem;
+        color: black;
+    }
+}
+/*Duże ekrany*/
+@media screen and (min-width: 1921px) {
+    body {
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #040252);
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        display: flex;
+        margin: auto;
+    }
+    .zan {
+        margin-left: 20px;
+        margin-top: 30px;
+        text-align: center;
+        color: black;
+        font-size: xx-large;
+    }
+    .za {
+        margin-left: 40px;
+        border-radius: 30px;
+        margin-top: 20px;
+        background-image: linear-gradient(
+            to right bottom,
+            #4ff4c5f0,
+            #211be8e7
+        );
+        border: #ffffff;
+        color: black;
+        font-size: xx-large;
+    }
+    .oc {
+        margin-left: 10px;
+        border-radius: 30px;
+        margin-top: 10px;
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        border: #ffffff;
+        color: black;
+        font-size: xx-large;
+    }
+    .oce {
+        margin-left: 40px;
+        border-radius: 30px;
+        margin-top: 10px;
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        border: #ffffff;
+        color: black;
+        font-size: xx-large;
+    }
+    #your-name {
+        margin: 2rem;
+        background-color: rgba(234, 233, 233, 0.936);
+        border-radius: 30px;
+        display: block;
+        width: auto;
+        height: auto;
+        font-size: xx-large;
+    }
+    #logo {
+        display: block;
+        width: 170rem;
+        font-size: xx-large;
+    }
+    .krn {
+        text-align: center;
+        margin-left: 20px;
+        color: black;
+        font-size: xx-large;
+    }
+    .pok {
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        border: #ffffff;
+        color: black;
+        border-radius: 30px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: xx-large;
+    }
+    .copyright {
+        margin: auto;
+        padding: 1rem;
+        color: black;
+        font-size: xx-large;
+    }
+}
+@media screen and (min-width: 6000px) {
+    body {
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #040252);
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        display: flex;
+        margin: auto;
+    }
+    .zan {
+        margin-left: 20px;
+        margin-top: 30px;
+        text-align: center;
+        color: black;
+        font-size: xxx-large;
+    }
+    .za {
+        margin-left: 40px;
+        border-radius: 60px;
+        margin-top: 20px;
+        background-image: linear-gradient(
+            to right bottom,
+            #4ff4c5f0,
+            #211be8e7
+        );
+        border: #ffffff;
+        color: black;
+        font-size: xxx-large;
+    }
+    .oc {
+        margin-left: 10px;
+        border-radius: 60px;
+        margin-top: 10px;
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        border: #ffffff;
+        color: black;
+        font-size: xxx-large;
+    }
+    .oce {
+        margin-left: 40px;
+        border-radius: 60px;
+        margin-top: 10px;
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        border: #ffffff;
+        color: black;
+        font-size: xxx-large;
+    }
+    #your-name {
+        margin: 2rem;
+        background-color: rgba(234, 233, 233, 0.936);
+        border-radius: 60px;
+        display: block;
+        width: auto;
+        height: auto;
+        font-size: x-large;
+    }
+    #logo {
+        display: block;
+        width: 110rem;
+        font-size: xxx-large;
+    }
+    .krn {
+        text-align: center;
+        margin-left: 20px;
+        color: black;
+        font-size: xxx-large;
+    }
+    .pok {
+        background-image: linear-gradient(to right bottom, #4ff4c5f0, #211bc1);
+        border: #ffffff;
+        color: black;
+        border-radius: 60px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: xxx-large;
+    }
+    .copyright {
+        margin: auto;
+        padding: 1rem;
+        color: black;
+        font-size: xxx-large;
     }
 }
